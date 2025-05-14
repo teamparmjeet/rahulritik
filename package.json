@@ -1,0 +1,39 @@
+{
+  "name": "tifa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.5",
+    "cloudinary": "^2.5.0",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "lucide-react": "^0.439.0",
+    "mongoose": "^8.6.2",
+    "next": "14.2.8",
+    "next-auth": "^4.24.7",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.3.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-to-print": "^3.0.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

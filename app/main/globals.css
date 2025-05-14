@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --blue: #29234b;
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+@media print {
+  /* Ensure full page is printed */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  /* Hide elements that you don't want to print */
+  .no-print {
+      display: none;
+  }
+
+  /* Optional: Remove unnecessary space between sections */
+  .p-6 {
+      padding: 0;
+  }
+
+  /* Ensure content does not overflow when printed */
+  .overflow-hidden {
+      overflow: visible;
+  }
+
+  /* Style the page breaks if content is too long */
+  .page-break {
+      page-break-before: always;
+  }
+}
+
+  .react-tel-input .form-control {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .01rem;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 48px;
+    margin-left: 0;
+    background: #FFFFFF;
+    border: 1px solid  #e5e7eb!important;
+    border-radius: 5px;
+    line-height: 25px;
+    height: 38px!important;
+    width:100%!important;
+    outline: none;
+}
+
+
+@keyframes blink {
+  0% {
+    background-color: red; 
+  }
+  50% {
+    background-color: #ad0000; 
+  }
+  100% {
+    background-color: red; 
+
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+
+.bg-online {
+  position: relative;
+  background-image: url("../../public/image/profile/Your paragraph text (1).png");
+  background-repeat: no-repeat;
+  background-size: 50%; /* Adjust this percentage as needed */
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+}
+
+.bg-ofline {
+  position: relative;
+  background-image: url("../../public/image/profile/Your paragraph text (2).png");
+  background-repeat: no-repeat;
+  background-size: 50%; /* Adjust this percentage as needed */
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+}

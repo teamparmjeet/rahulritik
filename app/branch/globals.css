@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --blue: #29234b;
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+
+
+
+  @keyframes blink {
+    0% {
+      background-color: red; 
+    }
+    50% {
+      background-color: #ad0000; 
+    }
+    100% {
+      background-color: red; 
+  
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+  
+  .react-tel-input .form-control {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .01rem;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 48px;
+    margin-left: 0;
+    background: #FFFFFF;
+    border: 1px solid  #e5e7eb!important;
+    border-radius: 5px;
+    line-height: 25px;
+    height: 38px!important;
+    width:100%!important;
+    outline: none;
+}
+
+  
+
+
+@keyframes borderPulse {
+    0% {
+        border-color: rgba(255, 204, 0, 1); /* Bright yellow */
+        box-shadow: 0 0 10px rgba(255, 204, 0, 1);
+        transform:skewY(-0.8deg)
+
+    }
+    25% {
+        border-color: rgba(255, 204, 0, 0.5); /* Faded yellow */
+        box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+        transform:skewY(0.8deg)
+    }
+    50% {
+        border-color: rgba(255, 204, 0, 1); /* Bright yellow */
+        box-shadow: 0 0 10px rgba(255, 204, 0, 1);
+        transform:skewY(-0.8deg)
+    }
+    75% {
+        border-color: rgba(255, 204, 0, 0.5); /* Faded yellow */
+        box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+        transform:skewY(0.8deg)
+    }
+    100% {
+        border-color: rgba(255, 204, 0, 1); /* Bright yellow */
+        box-shadow: 0 0 10px rgba(255, 204, 0, 1);
+        transform:skewY(-0.8deg)
+    }
+}
+
+.animated-border {
+    border: 4px solid; /* Set the border width */
+    animation: borderPulse 1s infinite;
+    position: relative; /* Needed for absolute positioning */
+}
+
+.animated-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: inherit; /* Inherit border styles */
+    border-radius: inherit; /* Match border radius */
+    opacity: 0;
+    animation: borderPulse 1s infinite;
+    z-index: -1; /* Place behind the main element */
+}
